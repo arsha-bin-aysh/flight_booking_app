@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 
 class SeatSelectionPage extends StatelessWidget {
+  const SeatSelectionPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Dummy seat layout
@@ -12,9 +14,9 @@ class SeatSelectionPage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text('Select Seats')),
+      appBar: AppBar(title: const Text('Select Seats')),
       body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           childAspectRatio: 2,
         ),
